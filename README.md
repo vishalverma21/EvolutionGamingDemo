@@ -3,14 +3,14 @@
 1. Open the browser and maximize it.
 2. Open  ss.com
 3. switch to Russian language.
-4. Go to the section �??????????????�, open search ('?????') and in Search enter the search phrase (eg. 'Computer') and select a different search parameters.
+4. Go to the section “Электротехника”, open search ('Поиск') and in Search enter the search phrase (eg. 'Computer') and select a different search parameters.
 5. Click Search
-6. Sort the results by price and select option '???????' in "??? ??????" dropdown.
-7. Open �??????????? ?????�. (advanced search)
+6. Sort the results by price and select option 'Продажа' in "Тип сделки" dropdown.
+7. Open “Расширенный поиск”. (advanced search)
 8. Enter search option price between 160 and 300.
 9. Choose at least 3 random ads.
-10. Press �???????? ????????? ? ????????� ( = add to memo)
-11. Open �????????� and check that the ads on the page match the previously selected
+10. Press “Добавить выбранные в закладки” ( = add to memo)
+11. Open “Закладки” and check that the ads on the page match the previously selected
 12. Close the browser.
 
 # Getting Started
@@ -41,10 +41,10 @@ Then step definition file calls main EvolutionGaming page file in which all meth
 
 ### Linux Machine
 
-If you�re on Fedora for example (or any closely-related RPM-based distro such as RHEL or CentOS), you can use below command to install Git:
+If you’re on Fedora for example (or any closely-related RPM-based distro such as RHEL or CentOS), you can use below command to install Git:
 ##### $ sudo dnf install git-all
 
-If you�re on a Debian-based distribution like Ubuntu, try apt-get:
+If you’re on a Debian-based distribution like Ubuntu, try apt-get:
 ##### $ sudo apt-get install git-all
 
 1. Clone the project from below location:
