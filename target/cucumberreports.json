@@ -1,0 +1,196 @@
+[
+  {
+    "id": "move-the-item-to-wishlist",
+    "tags": [
+      {
+        "name": "@zalando",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Move The Item To Wishlist",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 68389898,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AttachHooks.tearDown()"
+            }
+          }
+        ],
+        "id": "move-the-item-to-wishlist;validate-wishlist;;2",
+        "tags": [
+          {
+            "name": "@evolutiongaming",
+            "line": 4
+          },
+          {
+            "name": "@zalando",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 5981082265,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AttachHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Validate Wishlist",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "steps": [
+          {
+            "result": {
+              "duration": 1117305991,
+              "status": "passed"
+            },
+            "name": "Switch to russian language",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "EvolutionGamingStepDef.switch_to_russian_language()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4495396788,
+              "status": "passed"
+            },
+            "name": "Select Electrical Engineering",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "location": "EvolutionGamingStepDef.select_Electrical_Engineering()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6927836183,
+              "status": "passed"
+            },
+            "name": "Go to search and search for Computer",
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Computer",
+                  "offset": 28
+                }
+              ],
+              "location": "EvolutionGamingStepDef.go_to_search_and_search_for_item(String)"
+            },
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 6989145027,
+              "status": "passed"
+            },
+            "name": "Sort the result by price and select Продажа in transaction type",
+            "keyword": "When ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Продажа",
+                  "offset": 36
+                }
+              ],
+              "location": "EvolutionGamingStepDef.sort_the_result_by_price_and_select_in_transaction_type(String)"
+            },
+            "matchedColumns": [
+              1
+            ]
+          },
+          {
+            "result": {
+              "duration": 2944507855,
+              "status": "passed"
+            },
+            "name": "Go to advance search and enter price between 160 and 300",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "val": "160",
+                  "offset": 45
+                },
+                {
+                  "val": "300",
+                  "offset": 53
+                }
+              ],
+              "location": "EvolutionGamingStepDef.go_to_advance_search_and_enter_price_between_and(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ]
+          },
+          {
+            "result": {
+              "duration": 40326665,
+              "status": "failed",
+              "error_message": "java.lang.NoSuchMethodError: java.util.Random.ints(II)Ljava/util/stream/IntStream;\n\tat com.evolutiongaming.ui.home.page.EvolutionGamingPage.randomNumber(EvolutionGamingPage.java:180)\n\tat com.evolutiongaming.ui.home.page.EvolutionGamingPage.selectCheckbox(EvolutionGamingPage.java:111)\n\tat com.evolutiongaming.stepDefinitions.ui.home.EvolutionGamingStepDef.select_random_adds(EvolutionGamingStepDef.java:56)\n\tat ✽.Then Select 3 adds(Home/EvolutionGaming.feature:11)\n"
+            },
+            "name": "Select 3 adds",
+            "keyword": "Then ",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 7
+                }
+              ],
+              "location": "EvolutionGamingStepDef.select_random_adds(int)"
+            },
+            "matchedColumns": [
+              2
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "Add adds to bookmark",
+            "keyword": "And ",
+            "line": 12,
+            "match": {
+              "location": "EvolutionGamingStepDef.add_adds_to_bookmark()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "Verify adds are moved to bookmark",
+            "keyword": "And ",
+            "line": 13,
+            "match": {
+              "location": "EvolutionGamingStepDef.verify_adds_are_moved_to_bookmark()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "Home/EvolutionGaming.feature"
+  }
+]

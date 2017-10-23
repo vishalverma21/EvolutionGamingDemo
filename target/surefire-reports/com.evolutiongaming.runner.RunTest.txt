@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.evolutiongaming.runner.RunTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 28.91 sec <<< FAILURE!
+Then Select 3 adds(| Computer | Продажа | 3 | 160 | 300 |)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoSuchMethodError: java.util.Random.ints(II)Ljava/util/stream/IntStream;
+	at com.evolutiongaming.ui.home.page.EvolutionGamingPage.randomNumber(EvolutionGamingPage.java:180)
+	at com.evolutiongaming.ui.home.page.EvolutionGamingPage.selectCheckbox(EvolutionGamingPage.java:111)
+	at com.evolutiongaming.stepDefinitions.ui.home.EvolutionGamingStepDef.select_random_adds(EvolutionGamingStepDef.java:56)
+	at ✽.Then Select 3 adds(Home/EvolutionGaming.feature:11)
+
+| Computer | Продажа | 3 | 160 | 300 |  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoSuchMethodError: java.util.Random.ints(II)Ljava/util/stream/IntStream;
+	at com.evolutiongaming.ui.home.page.EvolutionGamingPage.randomNumber(EvolutionGamingPage.java:180)
+	at com.evolutiongaming.ui.home.page.EvolutionGamingPage.selectCheckbox(EvolutionGamingPage.java:111)
+	at com.evolutiongaming.stepDefinitions.ui.home.EvolutionGamingStepDef.select_random_adds(EvolutionGamingStepDef.java:56)
+	at ✽.Then Select 3 adds(Home/EvolutionGaming.feature:11)
+
