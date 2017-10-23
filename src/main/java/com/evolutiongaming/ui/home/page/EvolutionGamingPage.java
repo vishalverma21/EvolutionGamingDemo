@@ -57,7 +57,7 @@ public class EvolutionGamingPage extends BasePage {
 			Thread.sleep(500);
 			if (isElementPresent(EvolutionGamingLocator.enterSearch, 5)) {
 				findElement(EvolutionGamingLocator.enterSearch, 5).sendKeys(item);
-				
+				Thread.sleep(500);
 				findElement(EvolutionGamingLocator.searchiTemBtn, 5).click();
 			}
 			return true;
