@@ -52,7 +52,7 @@ Install Maven
 
 1. Clone the project from below location:
 
-git clone https://github.com/globus/automation-examples
+git clone https://github.com/vishalverma21/EvolutionGamingDemo.git
 
 2. Go to source folder in local machine
 cd EvolutionGamingDemo
