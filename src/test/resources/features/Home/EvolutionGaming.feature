@@ -1,8 +1,8 @@
-@zalando 
-Feature: Move The Item To Wishlist 
+@evolutiongaming 
+Feature: Verify BookMark Data
 
 @evolutiongaming 
-Scenario Outline: Validate Wishlist 
+Scenario Outline: Validate BookMark Data with the selected data 
 	Given Switch to russian language 
 	And Select Electrical Engineering 
 	And Go to search and search for <item> 
@@ -12,9 +12,6 @@ Scenario Outline: Validate Wishlist
 	And Add adds to bookmark 
 	And Verify adds are moved to bookmark 
 	
-	##Positive flow with valid article and valid quantity
-	##Any article number can be provided in below example with quantity
-	@Sanity 
 	Examples: 
 	| 	item     |   option  | random | min | max |
 	| Computer	 | 	 Продажа |   3    | 160 | 300 |
