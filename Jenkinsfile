@@ -1,15 +1,10 @@
-pipeline {
-  agent {
-    node {
-      label 'build'
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
+            }
+        }
     }
-    
-  }
-  stages {
-    stage('build') {
-      steps {
-        sh 'mvn clean build'
-      }
-    }
-  }
 }
